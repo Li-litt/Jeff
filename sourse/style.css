@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url("./imgs/bg.avif");
+  display: flex;
+  height: 100vh;
+}
+.wrapper {
+  margin: 40px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+}
+.main-img {
+  width: 45%;
+  margin: auto;
+  rotate: -10deg;
+  border-radius: 30px;
+  box-shadow: 12px 8px 23px 6px rgba(34, 60, 80, 0.42);
+  transition: 1000ms;
+}
+.main-img:hover {
+  rotate: 0deg;
+}
+.click-me {
+  width: 20%;
+  min-width: 150px;
+  height: 50px;
+  margin: auto;
+  border-radius: 25px;
+  border: none;
+  color: rgb(48, 76, 114);
+  font-size: 20px;
+  font-family: "Lobster", cursive;
+}
+.container {
+  margin: 25px 10% 0 10%;
+  display: flex;
+  justify-content: space-between;
+  gap: 15%;
+}
+.jeff1,
+.jeff2 {
+  width: 40%;
+  border-radius: 30px;
+  box-shadow: 12px 8px 23px 6px rgb(62, 94, 118);
+  transition: 500ms;
+}
+.jeff2 {
+  width: 35%;
+}
+.jeff1:hover {
+  rotate: -5deg;
+}
+.jeff2:hover {
+  rotate: 5deg;
+}
+.text-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.text1 {
+  color: rgb(48, 76, 114);
+  font-size: 23px;
+  font-family: "Lobster", cursive;
+  margin: 40% 0;
+}
+#refresh {
+  margin: auto;
+}
+@media (max-width: 1100px) {
+  .container {
+    gap: 15%;
+  }
+}
+@media (max-width: 800px) {
+  .container {
+    margin: 25px 10% 0 10%;
+    display: flex;
+    flex-direction: column;
+  }
+  .jeff1,
+  .jeff2 {
+    width: 80%;
+    margin: auto;
+  }
+  .text1 {
+    font-size: 23px;
+    text-align: center;
+    margin: 70px;
+  }
+}
